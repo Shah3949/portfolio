@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.nav {
+    width: 100%;
+    top: 0;
+    position: fixed;
+    height: 50px;
+    background-color: rgba(59, 113, 202);
+    z-index: 1;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: 10px;
+}
+
+.nav ul li {
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+.nav ul li a{
+    color: rgb(151, 173, 241);
+    text-decoration: none;
+}
+.nav ul li a:hover{
+    color: rgba(255, 255, 255, 0.897);
+
+}
+.nav ul li a:active {
+    color: rgba(65, 63, 63, 0.7); /* Keep the same color after clicking */
+}
+
+.info {
+    color: black;
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(39deg, rgba(2, 0, 36, 0.8206932431175595) 0%, rgb(66, 66, 165) 31%, rgba(0, 212, 255, 1) 100%);
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.info h1 {
+    font-size: 50px;
+    color: rgb(226, 246, 246);
+}
+
+.info h3 {
+    color: rgba(227, 235, 242, 0.704);
+    font-weight: 200;
+}
+.info div{
+    width: 50vw;
+    padding-top: 50px;
+    color: #c3c8d3b1;
+}
+
+.works {
+    width: 100%;
+    height: 100;
+    background-color: #45567d;
+    text-align: center;
+    padding-bottom: 60px;
+    padding-top: 50px;
+
+}
+
+.works h2 {
+    padding-top: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    color: rgb(197, 213, 227);
+
+}
+
+.works .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin: 100px 50px 0 100px;
+}
+
+.works .container .box {
+    width: 250px;
+    height: 300px;
+    background-color: rgba(240, 255, 255, 0.364);
+    margin: 20px;
+    padding: 60px;
+    /* border-radius: 20px; */
+    /* box-shadow: 13px 16px 33px -12px rgba(0,0,0,0.85); */
+    
+}
+.works .container #one {
+    background: url(image.png);
+    background-size: 200px; /* Set initial size */
+    background-repeat: no-repeat;
+    /* position: absolute; */
+    background-position: center;
+    transition: background-size 0.3s ease; /* Smooth transition */
+}
+.works .container #one:hover{
+    transform: scale(1.07);
+    transition: 0.1s ease-in-out;
+    box-shadow: 13px 16px 33px -12px rgba(0,0,0,0.85);
+    position: relative;
+    z-index: 0;
+}
+.contact {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(39deg, rgba(2, 0, 36, 0.8206932431175595) 0%, rgb(66, 66, 165) 31%, rgba(0, 212, 255, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .contact-container {
+    display: flex;
+    font-size: 30px;
+}
+
+.contact .contact-container div {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #363f52;
+    margin: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: border 0.3s ease;
+}
+
+.contact .contact-container div:hover {
+    border: 2px solid #4d576b;
+}
+
+.contact .contact-container div i {
+    color: rgba(0, 0, 0, 0.727);
+    padding: 5px;
+    font-size: 36px; /* Adjust font size as needed */
+}
+
+.contact .contact-container div span {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* transition: opacity 0.3s ease, top 0.3s ease; */
+    background-color: rgb(103, 160, 216);
+    padding: 10px 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    white-space: nowrap;
+    opacity: 0;
+}
+
+.contact .contact-container #phone:hover span {
+    display: block;
+    top: 120%;
+    opacity: 1;
+}
+.contact .contact-container #mail:hover span {
+    display: block;
+    top: 120%;
+    opacity: 1;
+}
+.contact .contact-container #insta:hover span {
+    display: block;
+    top: 120%;
+    opacity: 1;
+}
+.contact .contact-container #linkedin:hover span {
+    display: block;
+    top: 120%;
+    opacity: 1;
+}
