@@ -192,3 +192,52 @@ html {
     top: 120%;
     opacity: 1;
 }
+
+
+
+
+
+@media (max-width: 768px) {
+    /* Reduce font size for headings on smaller screens */
+    .info h1 {
+        font-size: 30px;
+    }
+    .info h3 {
+        font-size: 18px;
+    }
+    
+    /* Stack the navigation items vertically */
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav ul li {
+        padding: 10px;
+    }
+    
+    /* Adjust the project grid for mobile */
+    .works .container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        margin: 20px;
+    }
+    
+    /* Adjust the width of the text container in .info section */
+    .info div {
+        width: 80vw;
+    }
+    
+    /* Ensure contact icons are responsive */
+    .contact .contact-container div {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .contact .contact-container div i {
+        font-size: 28px;
+    }
+    
+    .contact .contact-container div span {
+        font-size: 16px;
+    }
+}
+
