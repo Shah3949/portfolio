@@ -3,60 +3,98 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <title>personal-portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="script.js"></script>
 </head>
 
 <body>
-    <div class="nav">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Work</a></li>
-            <li><a href="#connect">Contact</a></li>
-        </ul>
-    </div>
-    <div class="info-container" id="about">
-        <div class="info">
-            <h1>Shahzeb Salahuddin</h1>
-            <h3><i>web developer</i></h3>
-            <div>
-                <p><i> "Passionate web developer specializing in creating clean, responsive, and user-friendly websites.
-                        Combining a strong eye for design with technical expertise, I bring ideas to life with seamless
-                        functionality and modern aesthetics. Let's build something amazing together."</i></p>
+    <header class="header">
+        <nav class="nav">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Works</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+
+        <div class="info-container" id="about">
+            <div class="info">
+                <h1>Shahzeb Salahuddin</h1>
+                <h3><i>web developer</i></h3>
+                <div>
+                    <p><i> "Passionate web developer specializing in creating clean, responsive, and user-friendly
+                            websites.
+                            Combining a strong eye for design with technical expertise, I bring ideas to life with
+                            seamless
+                            functionality and modern aesthetics. Let's build something amazing together."</i></p>
+                </div>
+            </div>
+            <div class="profile-image"><img
+                    src="https://cdn3d.iconscout.com/3d/premium/thumb/web-developer-4506461-3738664.png"
+                    alt="profile-image"></div>
+        </div>
+        <div class="works" id="projects">
+            <h2>These are some of my projects</h2>
+            <div class="container">
+                <a href="https://codepen.io/shahzebsalahuddin0/pen/PoMYpQO" target="_blank"><div class="box"><img src="image/weather dashboard.png" alt="weather-dashboard" ></div></a>
+                <a href="https://codepen.io/shahzebsalahuddin0/pen/bGXdEge" target="_blank"><div class="box"><img src="image/stnoe paper scissor game.png" alt="game" ></div></a>
+                <a href="https://codepen.io/shahzebsalahuddin0/pen/yLmgjKx" target="_blank"><div class="box"><img src="image/calc.png" alt="calculator" ></div></a>
+                <a href="#"><div class="box"><img src="image/weather dashboard.png" alt="" ></div></a>
+                <a href="#"><div class="box"><img src="image/weather dashboard.png" alt="" ></div></a>
+                <a href="#"><div class="box"><img src="image/weather dashboard.png" alt="" ></div></a>
+                
+                
             </div>
         </div>
-        <div class="profile-image"><img src="profile-image.png" alt="profile-image"></div>
-    </div>
-    <div class="works" id="projects">
-        <h2><u>These are some of my projects</u></h2>
-        <div class="container">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-        </div>
-    </div>
-    <div class="contact">
-        <div class="contact-container" id="connect">
 
-            <div id="insta"><a href="https://www.google.com/"><i class='bx bxl-instagram'><span>Instagram</span></a></i>
+        <!-- Resume Section -->
+        <hr>
+        <section id="resume">
+            <h1>Resume</h1>
+            <a href="resume.pdf" target="_blank">View My Resume </a>
+            <a href="resume.pdf"><img src="image/resume scrnshot.png" alt=""></a>
+        </section>
+        <!-- Contact Section -->
+        <hr>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-icons">
+                <a href="https://www.instagram.com/yourprofile" target="_blank"><i class='bx bxl-instagram'></i></a>
+
+                <a href="https://www.linkedin.com/in/shahzebsalahuddin" target="_blank"><i
+                        class='bx bxl-linkedin'></i></a>
+
+                <a href="https://github.com/yourprofile" target="_blank"><i class='bx bxl-github'></i></a>
+
+                <a href="mailto:shahzebsalahuddin0@gmail.com" target="_blank"><i class='bx bxl-gmail'></i></a>
+                <div id="phone-icon" onclick="showPhone()">
+                    <i class='bx bx-mobile-alt'></i>
+                </div>
             </div>
-            <div id="linkedin"><a href="https://www.linkedin.com/in/shahzebsalahuddin"><i
-                        class='bx bxl-linkedin'><span>Linkedin</span></a></i></div>
-            <div id="mail"><a href="mailto:shahzebsalahuddin0@gmail.com"><i
-                        class='bx bx-envelope'><span>shahzebsalahuddin0@gmail.com</span></a></i></div>
-            <div id="phone"><a><i
-                        class='bx bx-mobile-alt'><span>9031073949</span></a></i></div>
-        </div>
-    </div>
-    <div class="contacts">
+            <div id="phone-number" class="hidden">
+                <p>9031073949</p>
+            </div>
 
+            <!-- Feedback Form -->
+            <div class="form">
+                <form id="feedback-form">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
     </div>
 
 
